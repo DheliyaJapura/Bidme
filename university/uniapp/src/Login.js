@@ -53,7 +53,6 @@ const styles = StyleSheet.create({
         backgroundColor: '#fff',
         borderRadius: 30
         
-
     },
 
     loginbtn:{
@@ -86,7 +85,7 @@ const styles = StyleSheet.create({
         borderRadius: 10,
         backgroundColor: '#5ABBBB'
         
-        
+     
     },
 
     inputView:{
@@ -117,8 +116,6 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         cursor: 'pointer'
     }
-
-   
 
    
 })

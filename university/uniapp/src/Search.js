@@ -8,7 +8,7 @@ const Search = () => {
         {
             id: 1,
             image: require('../assets/bulb.jpg'),
-            title: 'dheliya',
+            title: 'Reusable medical waste 10kg',
             price: '$25 16 Bids 13 hrs left',
             shipping: 'Ships from Sri Lanka',
             orders: '55+'
@@ -17,7 +17,7 @@ const Search = () => {
         {
             id: 2,
             image: require('../assets/bottle1.jpg'),
-            title: 'dheliya',
+            title: 'Reusable medical waste 10kg',
             price: '$25 16 Bids 13 hrs left',
             shipping: 'Ships from Sri Lanka',
             orders: '55+'
@@ -25,7 +25,7 @@ const Search = () => {
         {
             id: 3,
             image: require('../assets/medical.jpg'),
-            title: 'dheliya',
+            title: 'Reusable medical waste 10kg',
             price: '$25 16 Bids 13 hrs left',
             shipping: 'Ships from Sri Lanka',
             orders: '55+'
@@ -33,7 +33,7 @@ const Search = () => {
         {
             id: 4,
             image: require('../assets/bulb.jpg'),
-            title: 'dheliya',
+            title: 'Paper waste 10KG',
             price: '$25 16 Bids 13 hrs left',
             shipping: 'Ships from Sri Lanka',
             orders: '55+'
@@ -41,7 +41,7 @@ const Search = () => {
         {
             id: 5,
             image: require('../assets/bulb.jpg'),
-            title: 'dheliya',
+            title: 'Paper waste 10KG',
             price: '$25 16 Bids 13 hrs left',
             shipping: 'Ships from Sri Lanka',
             orders: '55+'
@@ -49,14 +49,13 @@ const Search = () => {
         {
             id: 6,
             image: require('../assets/bulb.jpg'),
-            title: 'dheliya',
+            title: 'Paper waste 10KG',
             price: '$25 16 Bids 13 hrs left',
             shipping: 'Ships from Sri Lanka',
             orders: '55+'
         },
     ]
  
-    const SPACING = 20
   
 
   return (
@@ -69,10 +68,10 @@ const Search = () => {
                     
                         <Image source={item.image} style={styles.pic}/>
                    <View> 
-                        <Text style={{fontSize: 18, fontWeight: '700'}} >{item.title}</Text>
-                        <Text style={{fontSize: 15, fontWeight: 'bold'}}>{item.price}</Text>
-                        <Text style={{fontSize: 12, opacity: 7, color: '#0099cc'}}>{item.shipping}</Text>
-                        <Text style={{fontSize: 12, opacity: 7, color: '#0099cc'}}>{item.orders}</Text>
+                        <Text style={{fontSize: 15, fontWeight: '700'}} >{item.title}</Text>
+                        <Text style={{fontSize: 13, fontWeight: 'bold'}}>{item.price}</Text>
+                        <Text style={{fontSize: 11, opacity: 7, color: '#0099cc'}}>{item.shipping}</Text>
+                        <Text style={{fontSize: 11, opacity: 7, color: '#0099cc'}}>{item.orders}</Text>
                     </View>
                  </View>
         
