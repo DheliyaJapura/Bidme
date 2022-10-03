@@ -19,18 +19,19 @@ export const Register = () => {
         </View>
         
         <View style={styles.inputView}>
+            
+            <TextInput placeholder='Full Name'  style={styles.box}/>   
+            <Icon size={25} color='red' name='user-alt' style={styles.miniIon} />
             <TextInput placeholder='Email' style={styles.box} />
             <Icon size={25} color='red' name='user-alt' style={styles.miniIon1} />
             <TextInput placeholder='Password' style={styles.box} />
             <Icon size={25} color='red' name='user-alt' style={styles.miniIon2} />
 
-
-            <Text style={{marginTop: 10, marginLeft: 170, fontWeight: '800'}}>Forgot password?</Text>
-            <Text style={{marginTop: 30, marginLeft: 15, fontWeight: '800'}}>Remember me</Text>
+            <Text style={{marginTop: 40, marginLeft: 15, fontWeight: '800'}}>At least 6 characters</Text>
 
         </View>
 
-        <Text style={styles.signup}>Or login with</Text>
+        <Text style={styles.signup}>Sign up with</Text>
 
         <View style={styles.btnGrp}>
            
@@ -46,7 +47,7 @@ export const Register = () => {
         </View>
 
         <TouchableOpacity style={styles.signupBtn}>
-            <Text style={{fontSize: 18, fontWeight: 'bold', color: '#fff',textAlign: 'center'}}>Log in</Text>
+            <Text style={{fontSize: 18, fontWeight: 'bold', color: '#fff',textAlign: 'center'}}>Sign Up</Text>
         </TouchableOpacity>
         
     </View>
@@ -87,22 +88,21 @@ const styles = StyleSheet.create({
     },
 
     loginbtn:{
+        alignItems: 'center',
+        justifyContent: 'center',
+        height: 40,
+        width: 150,
+        marginLeft: -40,
+
+    },
+
+    regbtn:{
        alignItems: 'center',
        justifyContent: 'center',
        height: 40,
        width: 140,
        backgroundColor: '#5ABBBB',
        borderRadius: 10,
-
-    },
-
-    regbtn:{
-      
-       alignItems: 'center',
-       justifyContent: 'center',
-       height: 40,
-       width: 150,
-       
     
        
        
@@ -113,20 +113,18 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         fontSize: 18,
         fontWeight: 'bold',
-        borderRadius: 10,
-        backgroundColor: '#5ABBBB',
-        color: 'white'
+        color: 'black',
+         
 
     },
 
     regtxt:{
-        
-
         textAlign: 'center',
         fontSize: 18,
         fontWeight: 'bold',
-        color: 'black',
-         
+        borderRadius: 10,
+        backgroundColor: '#5ABBBB',
+        color: 'white'
         
      
     },
@@ -148,15 +146,22 @@ const styles = StyleSheet.create({
         
     },
 
+    miniIon:{
+        position: 'absolute',
+        marginVertical:  30,
+        marginHorizontal: 200
+        
+        
+    },
     miniIon1:{
         position: 'absolute',
-        marginVertical:  25,
+        marginVertical:  100,
         marginHorizontal: 200
     },  
 
     miniIon2:{
         position: 'absolute',
-        marginVertical:  100,
+        marginVertical:  170,
         marginHorizontal: 200
     },
 
@@ -167,7 +172,7 @@ const styles = StyleSheet.create({
 
     signup:{
         fontWeight: 'bold',
-        marginTop: 40,
+        marginTop: 20,
         textAlign: 'center',
         cursor: 'pointer',
         color: 'black'

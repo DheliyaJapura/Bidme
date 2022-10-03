@@ -1,7 +1,5 @@
 import React from 'react'
-import {View, Text, Image, StyleSheet, SafeAreaView} from 'react-native'
-import { TextInput } from 'react-native-paper'
-import { black } from 'react-native-paper/lib/typescript/styles/colors'
+import {View, Text, Image, StyleSheet, SafeAreaView,TextInput} from 'react-native'
 
 const ListingPage = (title) => {
   return (
@@ -39,12 +37,16 @@ const ListingPage = (title) => {
             </View>
             <View style={styles.mainSubWrap}>
                 <Text style={styles.head}>Product details</Text>
-                <Text style={styles.subHead}>Add photos</Text>
-                <Image style={{height: 20, width: 20}} source={require('../assets/camera.png')} />
+                <View style={styles.photoWrap}>  
+                    <Text style={styles.subHead}>Add photos</Text>
+                    <Image style={{height: 20, width: 20, marginLeft: 22}} source={require('../assets/camera.png')} />
+                </View>
                 <View style={styles.backBox}>
-                    <TextInput style={styles.smallBox} 
+                <TextInput style={styles.smallBox} 
                      placeholder='eg: Reusable cardboxes for make papers'>
                     </TextInput>
+                  
+                    
                 </View>
             </View>
     
@@ -144,14 +146,26 @@ const styles = StyleSheet.create({
     },
 
     backBox:{
+        display: 'flex',
+     
+        
         
     },
 
     smallBox:{
         height: 50,
         width: '20%',
-        marginHorizontal: '50%'
+        marginHorizontal: '50%',
+        marginTop: -70,
+        
+    
+        
     },
+
+    photoWrap:{
+       marginLeft: 20,
+       marginTop: 50
+    }
 
 
 
